@@ -1,0 +1,29 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  noun1: MyString
+  noun2: MyString
+  noun3: MyString
+  place1: MyString
+  place2: MyString
+  verb1: MyString
+  verb2: MyString
+  verb3: MyString
+  string: MyString
+  adjective1: MyString
+  adjective2: MyString
+  adjective3: MyString
+
+two:
+  noun1: MyString
+  noun2: MyString
+  noun3: MyString
+  place1: MyString
+  place2: MyString
+  verb1: MyString
+  verb2: MyString
+  verb3: MyString
+  string: MyString
+  adjective1: MyString
+  adjective2: MyString
+  adjective3: MyString

@@ -1,0 +1,75 @@
+<%= form_with(model: word_select, local: true) do |form| %>
+  <% if word_select.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(word_select.errors.count, "error") %> prohibited this word_select from being saved:</h2>
+
+      <ul>
+      <% word_select.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+  
+  <div class="form-group">
+  <div class="field">
+    <%= form.label :noun1 %>
+    <%= form.text_field :noun1, :class => 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :noun2 %>
+    <%= form.text_field :noun2, :class => 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :noun3 %>
+    <%= form.text_field :noun3, :class => 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :place1 %>
+    <%= form.text_field :place1, :class => 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :place2 %>
+    <%= form.text_field :place2, :class => 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :verb1 %>
+    <%= form.text_field :verb1, :class => 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :verb2 %>
+    <%= form.text_field :verb2, :class => 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :verb3 %>
+    <%= form.text_field :verb3, :class => 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :adjective1 %>
+    <%= form.text_field :adjective1, :class => 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :adjective2 %>
+    <%= form.text_field :adjective2, :class => 'form-control' %>
+  </div>
+
+  <div class="field">
+    <%= form.label :adjective3 %>
+    <%= form.text_field :adjective3, :class => 'form-control' %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit "Create Mad Lib", :class => 'btn' %>
+  </div>
+    
+</div>
+<% end %>

@@ -1,0 +1,16 @@
+<p id="notice">
+  <%= notice %>
+</p>
+
+<main role="main" class="container">
+  <div class="jumbotron">
+
+    <h1>Current Mad Lib</h1>
+    <p class="lead">
+      In a place called <span class="words"><%= @word_select_last.place1 %></span> there was a <span class="words"><%= @word_select_last.adjective1 %> <%= @word_select_last.noun1 %></span> who <span class="words"><%= @word_select_last.verb1 %></span>      <br> everyone there. <span class="words"><%= @word_select_last.noun2 %></span>, the <span class="words"><%= @word_select_last.adjective2 %></span> hero of our story, <span class="words"><%= @word_select_last.adjective3 %> <%= @word_select_last.verb2 %></span>      <br> the <span class="words"><%= @word_select_last.noun3 %></span> to save the day. Sadly, he had to <span class="words"><%= @word_select_last.verb3 %></span> to <span class="words"><%= @word_select_last.place2 %></span> due to tax problems.
+    </p>
+  </div>
+  <%= link_to 'New Word Select', new_word_select_path, :class => 'btn btn-secondary' %>
+</main>
+
+<br>

@@ -1,0 +1,2 @@
+class WordSelect < ApplicationRecord
+end
